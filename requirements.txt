@@ -2,7 +2,13 @@ asgiref==3.5.2
 autoprefixer==0.1.0
 backports.zoneinfo==0.2.1
 Django==4.1.4
+django-appconf==1.0.5
+django-compressor==4.3.1
+django-compressor-postcss==0.8.2
 gunicorn==20.1.0
+optional-django==0.3.0
+rcssmin==1.1.1
+rjsmin==1.2.1
 sqlparse==0.4.3
-tzdata==2022.7
 tailwindcss==0.0.1
+tzdata==2022.7
