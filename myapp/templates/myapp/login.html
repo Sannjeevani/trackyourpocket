@@ -1,0 +1,46 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<style>
+    body {
+        background: linear-gradient(to top right, #00cc99 0%, #99ff66 100%)
+        font-family: 'Anton', sans-serif;
+        padding-top: 50px;
+       
+    }
+
+    .container {
+        max-width: 550px;
+        margin: auto;
+        background-color: #FAFAFA;
+        -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+        box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+    }
+
+    .header-bar{
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+        background: rgb(135,228,119);
+        background: linear-gradient(90 deg, rgba(135,228,119,0.98) 0%, rgba(9,121,46,1) 35%, rgba(0,212,255,1) 100%);
+    }
+</style>
+<div class="container">
+    <div class="header-bar">
+        <h1>Login</h1>
+    </div>
+    <div class="card-body">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="login">
+        </form>
+    </div>
+    <p>New to TrackYourPocket? </p>
+<a href="{% url 'register' %}">Register</a>
+</div>
+
+
+
